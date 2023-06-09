@@ -11,10 +11,11 @@
             padding: 0px;
             margin: 0px;
         }
+
         #techstack_body {
             border: 1px solid blue;
             padding: 50px 0px;
-            overflow::scroll;
+            overflow: hidden;
         }
 
         #icon_scroll_box {
@@ -53,20 +54,31 @@
         @media screen and (max-width: 430px) {
             #icon_scroll_box {
                 height: 145px;
+                overflow: scroll;
+                width: 100vw;
             }
+
             .techstack_icon {
                 width: 60px;
             }
 
             #techstack_line_top {
+                width: max-content;
                 height: 30px;
+                margin: 5px auto;
             }
 
             #techstack_line_middle {
+                width: max-content;
+                margin: 5px auto;
+                padding-left: 32px;
                 height: 30px;
             }
 
             #techstack_line_bottom {
+                width: max-content;
+                margin: 5px auto;
+
                 height: 30px;
             }
         }
